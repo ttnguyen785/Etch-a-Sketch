@@ -1,22 +1,31 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: aqua;
-}
-
-#div_container {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.grid-row {
+  }
+.header {
     display: flex;
     align-items: center;
+    width: 400px;
+    justify-content: space-around;
 }
-
-.grid-cell {
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 1px solid black; 
+  }
+  
+  .grid-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .grid-cell {
     border: 1px solid black;
     min-width: 40px;
     min-height: 40px;
-    display: inline-block;
-}
+  }
+  
