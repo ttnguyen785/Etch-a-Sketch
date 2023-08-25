@@ -3,7 +3,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aqua;
   }
 .header {
     display: flex;
@@ -18,14 +17,4 @@ body {
     border: 1px solid black; 
   }
   
-  .grid-row {
-    display: flex;
-    align-items: center;
-  }
-  
-  .grid-cell {
-    border: 1px solid black;
-    min-width: 40px;
-    min-height: 40px;
-  }
-  
+ 

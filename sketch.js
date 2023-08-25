@@ -1,14 +1,20 @@
-var parentDiv = document.getElementById("div_container");
+document.addEventListener("DOMContentLoaded", function() {
+  createBoard(32);
+  console.log('Hi');
 
-for (var i = 0; i < 16; i++) {
-  var row = document.createElement("div");
-  row.classList.add("grid-row");
-  parentDiv.appendChild(row);
+})
+ 
+function createBoard(size) {
+  let board = document.querySelector(".board");
 
-  for (var j = 0; j < 16; j++) {
-    var cell = document.createElement("div");
-    cell.classList.add("grid-cell");
-    parentDiv.children[i].appendChild(cell);
+  board.style.gridTemplateColumns = `repeat(${size},1fr)`;
+  board.style.gridTemplateRows = `repeat(${size},1fr)`;
+
+  let numDivs = size * size;
+  for (let i = 0; i < numDivs; i++) {
+    let div = document.createElement("div")
+    div.style.border = "1px solid black" 
+    board.insertAdjacentElement("beforeend", div);
   }
 }
 
