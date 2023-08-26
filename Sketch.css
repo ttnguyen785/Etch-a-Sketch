@@ -7,16 +7,14 @@ body {
 .header {
     display: flex;
     align-items: center;
-    width: 400px;
+    width: px;
     justify-content: space-around;
 }
 .board {
     width: 500px;
     height: 500px;
     display: grid;
-    border: 1px solid black; 
+    border: 1px solid black;
+    margin-bottom: 50px;
   }
   
- .footer {
-  margin-top: 20px;
- }
